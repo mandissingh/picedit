@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mandeep.picedit.NewActivity"
+    tools:showIn="@layout/activity_new">
+
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/imageButton3"
+        android:background="@mipmap/grayscale"
+        android:onClick="blackandwhite"
+        android:layout_alignTop="@+id/imageButton4"
+        android:layout_toRightOf="@+id/imageButton4"
+        android:layout_toEndOf="@+id/imageButton4" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/imageButton4"
+        android:onClick="Rotate"
+        android:layout_alignTop="@+id/imageButton5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@mipmap/rotate" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/imageButton5"
+        android:background="@mipmap/crop"
+        android:onClick="imageCrop"
+        android:layout_alignTop="@+id/imageButton6"
+        android:layout_toLeftOf="@+id/imageButton6"
+        android:layout_toStartOf="@+id/imageButton6" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/imageButton6"
+        android:background="@mipmap/flipside"
+        android:onClick="flipside"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/imageButton7"
+        android:background="@mipmap/flipup"
+        android:onClick="flipupdown"
+        android:layout_alignTop="@+id/imageButton6"
+        android:layout_toRightOf="@+id/imageButton6"
+        android:layout_toEndOf="@+id/imageButton6" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/imageButton8"
+        android:background="@mipmap/reset"
+        android:onClick="Undo"
+        android:layout_alignTop="@+id/imageButton7"
+        android:layout_toLeftOf="@+id/imageButton9"
+        android:layout_toStartOf="@+id/imageButton9" />
+
+    <ImageButton
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:id="@+id/imageButton9"
+        android:background="@mipmap/save"
+        android:layout_alignBottom="@+id/imageButton8"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="Saveimage"/>
+</RelativeLayout>
